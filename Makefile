@@ -5,6 +5,7 @@
 default: bin2coe
 
 bin2coe: main.cpp
+	sudo apt-get install -y libboost-all-dev
 	g++ main.cpp -lboost_program_options -o bin2coe
 
 clean:
